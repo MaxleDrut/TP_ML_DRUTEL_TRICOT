@@ -36,7 +36,7 @@ def main():
 
     print("Start training")
 
-    n_epochs = 2
+    n_epochs = 10
     print_every_n_batch = 200
 
     for epoch in range(1, n_epochs+1):
@@ -62,10 +62,12 @@ def main():
 
     print('Finished Training')    
 
+
     # ---------------
     #   Test model
     # ---------------
 
+    print("Testing the model")
     test_model(network, test_loader, device)
 
     
